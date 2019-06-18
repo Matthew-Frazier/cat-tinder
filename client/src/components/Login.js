@@ -51,8 +51,8 @@ class Login extends React.Component {
 
 const ConnectedLogin = (props) => (
   <AuthConsumer>
-    { auth => 
-      <Login { ...props } auth={auth} />
+    { authProviderValueObject => 
+      <Login { ...props } auth={authProviderValueObject} />
     }
   </AuthConsumer>
 );
